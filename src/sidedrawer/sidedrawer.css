@@ -37,9 +37,10 @@
     display: block;
     padding: 0 2%;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
-.sidedrawer li:hover {
+.sidedrawer li:hover, .sidedrawer a.active {
     background-color: gray;
     
 }

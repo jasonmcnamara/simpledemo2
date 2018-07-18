@@ -66,7 +66,7 @@
     
 }
 
-.contact:hover {
+.contact:hover, .contact.active {
     text-decoration: underline;
     background-color: rgb(34, 34, 29);
     box-sizing: border-box;

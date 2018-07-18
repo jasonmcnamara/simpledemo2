@@ -25,7 +25,7 @@ const sidedrawer = () => {
         listitem[value] = document.createElement('li');
         listitem[value].className += ' path'+value;
         linkitem[value] = document.createElement('a');
-        linkitem[value].className += ' atag'+value;
+        linkitem[value].className += value;
         linkitem[value].textContent = value[0].toUpperCase()+value.substr(1);
         linkitem[value].setAttribute('href', value);
         linkitem[value].setAttribute('goto', value);

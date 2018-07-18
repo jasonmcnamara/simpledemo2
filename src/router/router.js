@@ -4,6 +4,16 @@ import views from '../../src/views/views';
 const router = () => {
 
     const switcher = (url) => {
+
+        const removeActiveLinks = document.querySelectorAll('a');
+        removeActiveLinks.forEach((item, index) => {
+            item.classList.remove('active');
+        });
+        console.log('.'+url);
+        console.log(document.querySelector(`.${url}`));
+        const clickedEl = document.querySelector(`.${url}`);
+        clickedEl.className += ' active';
+
         switch(url){
         case 'link1':document.querySelector('.layout').innerHTML = '';
                     document.querySelector('.layout').appendChild(views().link1);
@@ -47,8 +57,8 @@ const router = () => {
     // This calls the switcher on the first router call so app shows appropriate path
     // change split index number corresponding to the number of subfolders where your app lives
     // switcher(location.pathname.split('/')[2]);
-    // switcher(location.pathname.split('/')[1]);
-    switcher();
+    switcher(location.pathname.split('/')[1]);
+    // switcher();
 
     const grabAllLinks = (event) => {
         event.target.href ? event.preventDefault() : null;
