@@ -39,8 +39,10 @@ const router = () => {
                  break;
     }
 }
-
-    switcher(location.pathname.split('/')[2]);
+    // This calls the switcher on the first router call so app shows appropriate path
+    // change split index number corresponding to the number of subfolders where your app lives
+    // switcher(location.pathname.split('/')[2]);
+    switcher(location.pathname.split('/')[1]);
 
     const grabAllLinks = (event) => {
         event.target.href ? event.preventDefault() : null;
