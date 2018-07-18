@@ -34,7 +34,9 @@ const router = () => {
                     break;
         default: document.querySelector('.layout').innerHTML = '';
                  document.querySelector('.layout').appendChild(views().home);
-                 url ? history.pushState('', '', '/simpledemo2/') : null;
+                 // change the next line if your app is hosted in a subfolder
+                 //  url ? history.pushState('', '', '/simpledemo2/') : null;
+                 url ? history.pushState('', '', '/') : null;
                  window.scrollTo(0,0);
                  break;
     }

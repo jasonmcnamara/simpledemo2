@@ -26,7 +26,7 @@ const sidedrawer = () => {
         listitem[value].className += ' path'+value;
         linkitem[value] = document.createElement('a');
         linkitem[value].className += ' atag'+value;
-        linkitem[value].textContent = value;
+        linkitem[value].textContent = value[0].toUpperCase()+value.substr(1);
         linkitem[value].setAttribute('href', value);
         linkitem[value].setAttribute('goto', value);
         // linkitem[value].addEventListener('click', linkhandler);
