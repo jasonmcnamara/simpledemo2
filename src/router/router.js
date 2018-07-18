@@ -1,4 +1,3 @@
-import linklist from '../../src/linklist/linklist';
 import views from '../../src/views/views';
 
 const router = () => {
@@ -9,11 +8,18 @@ const router = () => {
         removeActiveLinks.forEach((item, index) => {
             item.classList.remove('active');
         });
-        console.log('.'+url);
-        console.log(document.querySelector(`.${url}`));
-        const clickedEl = document.querySelector(`.${url}`);
-        clickedEl.className += ' active';
-
+        // console.log(document.querySelector(`.${url}`));
+        console.log(url);
+        if(url != ''){
+            const clickedEl = document.querySelector(`.${url}`);
+            clickedEl.className += ' active';
+            console.log('wait what?');
+        }
+        else{
+            console.log('else bruh');
+            const needHomeActive = document.querySelector('.home');
+            needHomeActive.className += ' active';
+        }
         switch(url){
         case 'link1':document.querySelector('.layout').innerHTML = '';
                     document.querySelector('.layout').appendChild(views().link1);
