@@ -3,6 +3,8 @@ import lorem from '../../src/lorem/lorem';
 
 const views = () => {
 
+    console.log('testing');
+
     const links = linklist();
 
     const views = {};
