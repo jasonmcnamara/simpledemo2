@@ -3,8 +3,6 @@ import views from '../../src/views/views';
 
 const router = () => {
 
-    const links = linklist();
-
     const switcher = (url) => {
         switch(url){
         case 'link1':document.querySelector('.layout').innerHTML = '';
@@ -32,6 +30,11 @@ const router = () => {
                     url ? history.pushState('', '', url) : console.log('not a clicked link');
                     window.scrollTo(0,0);
                     break;
+        case 'contact':console.log('Contact link pushed');
+                    document.querySelector('.layout').innerHTML = '';
+                    document.querySelector('.layout').appendChild(views().contact);
+                    url ? history.pushState('', '', url) : console.log('not a clicked link');
+                    break;
         default: document.querySelector('.layout').innerHTML = '';
                  document.querySelector('.layout').appendChild(views().home);
                  // change the next line if your app is hosted in a subfolder
@@ -44,7 +47,8 @@ const router = () => {
     // This calls the switcher on the first router call so app shows appropriate path
     // change split index number corresponding to the number of subfolders where your app lives
     // switcher(location.pathname.split('/')[2]);
-    switcher(location.pathname.split('/')[1]);
+    // switcher(location.pathname.split('/')[1]);
+    switcher();
 
     const grabAllLinks = (event) => {
         event.target.href ? event.preventDefault() : null;

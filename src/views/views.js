@@ -41,6 +41,18 @@ const views = () => {
     headerhome.textContent = 'Home Link View';
     views.home.appendChild(headerhome);
     views.home.appendChild(lorem());
+    
+
+    views.contact = document.createElement('div');
+
+    const contactheader = document.createElement('h1');
+    contactheader.textContent = 'Contact View';
+
+    const contactpara = document.createElement('p');
+    contactpara.textContent = 'Add some form soon';
+
+    views.contact.appendChild(contactheader);
+    views.contact.appendChild(contactpara);
 
     
 
