@@ -1,0 +1,75 @@
+.toolbar {
+    height: 60px;
+    background-color: rgb(121, 121, 99);
+    display: flex;
+    justify-content: space-evenly;
+    vertical-align: middle;
+    box-shadow: 0 2px 3px rgba(34, 31, 31, 0.5);
+    position: fixed;
+    width: 100%;
+}
+
+.menubtn {
+    box-sizing: border-box;
+    width: 33%;
+    border-left:transparent 20px solid;
+}
+
+.triplebar {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    height: 100%;
+    line-height: 60px;
+    vertical-align: middle;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media (min-width: 600px){
+    .triplebar:hover {
+        transition: transform .15s;
+        transform: scale(1.25);
+        cursor: pointer;
+    }
+}
+
+.logo {
+    background-color: white;
+    line-height: 60px;
+    width: 33%;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.contactdiv {
+    
+    /* padding: 0 2%; */
+    /* flex: 1; */
+    width: 33%;
+    text-align: right;
+}
+ 
+.contact {
+    /* text-align: right; */
+    display: inline-block;
+    height: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    color: rgb(21, 20, 20);
+    padding: 0 3%;
+    
+}
+
+.contact:hover {
+    text-decoration: underline;
+    background-color: rgb(34, 34, 29);
+    box-sizing: border-box;
+    border-bottom: solid 2px rgb(220, 220, 212);
+    color: rgb(193, 193, 180);
+}

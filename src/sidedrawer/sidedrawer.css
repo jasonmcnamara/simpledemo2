@@ -1,0 +1,45 @@
+.sidedrawer {
+    background-color: white;
+    position: fixed;
+    top: 60px;
+    width: 70vw;
+    left: -70vw;
+    transition: transform .1s;
+    box-sizing: border-box;
+    border: solid 1px rgb(43, 41, 41);
+}
+
+.showsidedrawer {
+    transform: translate(100%);
+}
+
+.sidedrawer ul {
+    /* box-sizing: border-box;
+    border: 1px lime solid; */
+    line-height: 30px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidedrawer li {
+    /* box-sizing: border-box;
+    border:red solid 1px; */
+    background-color: lightgray;
+}
+
+.sidedrawer a {
+    color: black;
+    height: 100%;
+    width: 100%;
+    /* box-sizing: border-box;
+    border: yellow 1px solid; */
+    display: block;
+    padding: 0 2%;
+    text-decoration: none;
+}
+
+.sidedrawer li:hover {
+    background-color: gray;
+    
+}
