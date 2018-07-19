@@ -1,3 +1,4 @@
+import 'babel-polyfill';
 import '../src/main.css';
 import popstatehandler from '../src/popstatehandler/popstatehandler';
 import router from '../src/router/router';

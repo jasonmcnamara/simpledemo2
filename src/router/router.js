@@ -4,7 +4,7 @@ const router = () => {
 
     const switcher = (url) => {
 
-        const removeActiveLinks = document.querySelectorAll('a');
+        const removeActiveLinks = Array.from(document.querySelectorAll('a'));
         removeActiveLinks.forEach((item, index) => {
             item.classList.remove('active');
         });
